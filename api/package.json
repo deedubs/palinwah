@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "description": "Palinwha API",
+  "authors": "Dan Williams",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "rejoice -c manifest.json -p . -r babel-register"
+  },
+  "dependencies": {
+    "dm": "file:../weld/assets/node-datamodel.tgz",
+    "hapi": "^16.4.1",
+    "hapi-pino": "^1.6.0",
+    "mongodb": "^2.2.28",
+    "rejoice": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.24.1"
+  }
+}

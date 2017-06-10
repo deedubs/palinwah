@@ -1,0 +1,19 @@
+{
+  "connections": [
+    {
+      "port": "$env.PORT"
+    }
+  ],
+  "registrations": [
+    {
+      "plugin": {
+        "register": "hapi-pino"
+      }
+    },
+    {
+      "plugin": {
+        "register": "./messages"
+      }
+    }
+  ]
+}

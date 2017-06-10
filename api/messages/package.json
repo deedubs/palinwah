@@ -1,0 +1,8 @@
+{
+  "name": "messages",
+  "description": "Messages API Endpoint",
+  "authors": "Dan Williams",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "dependencies": {}
+}
