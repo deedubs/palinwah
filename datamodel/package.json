@@ -1,12 +1,12 @@
 {
   "name": "dm",
-  "private": true,
   "description": "Message Data Model",
   "authors": "Dan Williams",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepack": "babel . --out-dir=dist"
   },
   "jest": {
     "collectCoverage": true

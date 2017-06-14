@@ -3,19 +3,25 @@ import { Message } from "dm";
 export function GetMessages(request, reply) {
   const query = {};
 
-  Message.find(query).then(messages => {
-    reply(messages);
-  });
+  Message.find(query).then(reply);
 }
 
 export function CreateMessage(request, reply) {
   const { payload } = request;
 
   Message.create(payload).then(message => {
-    reply(message).header("Location", `/messages/${message._id}`).code(201);
+    reply(message).header("Location", `/${message._id}`).code(201);
   });
 }
 
-export function ShowMessage(request) {}
+export function ShowMessage(request, reply) {
+  const { messageId } = request.params;
 
-export function UpdateMessage(request, reply) {}
+  Message.findOne({ _id: messageId }).then(reply);
+}
+
+export function DeleteMessage(request, reply) {
+  const { messageId } = request.params;
+
+  Message.remove(messageId).then(() => reply().code(204));
+}

@@ -2,12 +2,14 @@
   "name": "palinwah",
   "version": "1.0.0",
   "dependencies": {
+    "create-react-app-add-redux": "^1.0.13",
     "eslint": "^3.19.0",
     "jest": "^20.0.4",
     "prettier": "^1.4.4"
   },
   "devDependencies": {
     "babel-preset-latest": "^6.24.1",
-    "babel-register": "^6.24.1"
+    "babel-register": "^6.24.1",
+    "create-react-app": "^1.3.1"
   }
 }
