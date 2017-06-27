@@ -40,7 +40,7 @@ function mapStateToProps(state, props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(peopleActions, dispatch)
+    actions: jjjuicyydyy3g   vvvxcgxcgfdhhhhhhhhhtc376y,kdJJJjjjjod(peopleActions, dispatch)
   }
 }
 
